@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCSE Biology — Cells Revision</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <div>
+          <span class="subject-tag">GCSE Biology</span>
+          <h1>Cells &amp; Transport</h1>
+          <p class="header-sub">Complete revision notes with interactive diagrams</p>
+        </div>
+        <div class="topic-pills">
+          <button class="pill active" onclick="scrollTo('cells')">Cell Types</button>
+          <button class="pill" onclick="scrollTo('microscopes')">Microscopes</button>
+          <button class="pill" onclick="scrollTo('division')">Cell Division</button>
+          <button class="pill" onclick="scrollTo('stem')">Stem Cells</button>
+          <button class="pill" onclick="scrollTo('transport')">Transport</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ═══════════ SECTION 1: CELL TYPES ═══════════ -->
+    <section id="cells" class="topic-section">
+      <div class="section-label">Topic 1</div>
+      <h2>Cell Types</h2>
+      <p class="section-intro">All living things are made of cells. There are two fundamental types — knowing the difference is essential for every biology exam.</p>
+
+      <div class="key-facts-grid">
+        <div class="key-fact c-green">
+          <div class="kf-title">Eukaryotic</div>
+          <div class="kf-body">Has a <strong>true nucleus</strong> enclosed in a membrane. Includes animal, plant and algal cells. Size: 10–100 µm.</div>
+        </div>
+        <div class="key-fact c-purple">
+          <div class="kf-title">Prokaryotic</div>
+          <div class="kf-body">DNA floats <strong>freely in cytoplasm</strong> — no membrane-bound nucleus. All bacteria are prokaryotic. Size: 1–5 µm.</div>
+        </div>
+        <div class="key-fact c-amber">
+          <div class="kf-title">Both have</div>
+          <div class="kf-body">Cell membrane, cytoplasm, ribosomes. That's it — everything else differs.</div>
+        </div>
+      </div>
+
+      <!-- DIAGRAM 1: Prokaryotic vs Eukaryotic -->
+      <div class="diagram-card">
+        <div class="diagram-title">Prokaryotic vs Eukaryotic Cell</div>
+        <svg width="100%" viewBox="0 0 680 380" role="img">
+          <title>Prokaryotic vs eukaryotic cell comparison</title>
+          <defs><marker id="arr1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+          <!-- LEFT: Prokaryote -->
+          <text x="145" y="22" text-anchor="middle" class="svg-title" fill="#27500A">Prokaryotic cell (bacterium)</text>
+          <rect x="25" y="35" width="240" height="210" rx="75" fill="#C0DD97" stroke="#3B6D11" stroke-width="3"/>
+          <rect x="38" y="48" width="214" height="184" rx="68" fill="#EAF3DE" stroke="#639922" stroke-width="1.5"/>
+          <!-- Circular DNA -->
+          <ellipse cx="110" cy="140" rx="38" ry="26" fill="none" stroke="#3B6D11" stroke-width="2" stroke-dasharray="5 3"/>
+          <text x="110" y="144" text-anchor="middle" class="svg-small" fill="#27500A">DNA loop</text>
+          <!-- Plasmid -->
+          <circle cx="185" cy="115" r="14" fill="none" stroke="#639922" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="185" y="119" text-anchor="middle" class="svg-small" fill="#3B6D11">plasmid</text>
+          <!-- Ribosomes -->
+          <circle cx="155" cy="175" r="5" fill="#639922"/>
+          <circle cx="172" cy="170" r="5" fill="#639922"/>
+          <circle cx="140" cy="180" r="5" fill="#639922"/>
+          <circle cx="188" cy="175" r="5" fill="#639922"/>
+          <text x="165" y="198" text-anchor="middle" class="svg-small" fill="#3B6D11">ribosomes</text>
+          <!-- Flagellum -->
+          <path d="M265 140 Q305 100 325 120 Q345 140 365 125" fill="none" stroke="#639922" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="340" y="118" class="svg-small" fill="#3B6D11">flagellum</text>
+          <!-- Labels -->
+          <line x1="38" y1="68" x2="15" y2="40" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="12" y="37" text-anchor="end" class="svg-small" fill="#5F5E5A">cell wall</text>
+          <line x1="38" y1="85" x2="15" y2="58" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="12" y="55" text-anchor="end" class="svg-small" fill="#5F5E5A">cell membrane</text>
+          <text x="145" y="262" text-anchor="middle" class="svg-small" fill="#5F5E5A">No nucleus · no membrane-bound organelles · ~1–5 µm</text>
+
+          <!-- RIGHT: Eukaryote -->
+          <text x="530" y="22" text-anchor="middle" class="svg-title" fill="#3C3489">Eukaryotic cell (animal)</text>
+          <ellipse cx="530" cy="155" rx="145" ry="130" fill="#EEEDFE" stroke="#534AB7" stroke-width="2.5"/>
+          <!-- Nucleus -->
+          <ellipse cx="505" cy="140" rx="52" ry="42" fill="#CECBF6" stroke="#534AB7" stroke-width="2"/>
+          <text x="505" y="136" text-anchor="middle" class="svg-small" fill="#3C3489">nucleus</text>
+          <text x="505" y="150" text-anchor="middle" class="svg-small" fill="#534AB7">(DNA/chromosomes)</text>
+          <!-- Mitochondria -->
+          <ellipse cx="590" cy="215" rx="34" ry="17" fill="#FAC775" stroke="#854F0B" stroke-width="1.5"/>
+          <path d="M562 215 Q570 207 578 215 Q586 223 594 215 Q602 207 610 215" fill="none" stroke="#854F0B" stroke-width="1"/>
+          <text x="590" y="240" text-anchor="middle" class="svg-small" fill="#633806">mitochondria</text>
+          <!-- Ribosomes -->
+          <circle cx="445" cy="215" r="4" fill="#7F77DD"/>
+          <circle cx="457" cy="220" r="4" fill="#7F77DD"/>
+          <circle cx="433" cy="220" r="4" fill="#7F77DD"/>
+          <text x="443" y="238" text-anchor="middle" class="svg-small" fill="#534AB7">ribosomes</text>
+          <!-- Label: cell membrane -->
+          <line x1="672" y1="155" x2="648" y2="135" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="675" y="155" class="svg-small" fill="#5F5E5A">cell</text>
+          <text x="675" y="167" class="svg-small" fill="#5F5E5A">membrane</text>
+          <text x="530" y="300" text-anchor="middle" class="svg-small" fill="#5F5E5A">Has true nucleus · membrane-bound organelles · ~10–100 µm</text>
+
+          <!-- Divider -->
+          <line x1="390" y1="15" x2="390" y2="285" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="6 4"/>
+        </svg>
+      </div>
+
+      <!-- DIAGRAM 2: Plant Cell -->
+      <div class="diagram-card">
+        <div class="diagram-title">Plant Cell (Eukaryotic) — extra structures vs animal cell</div>
+        <svg width="100%" viewBox="0 0 680 400" role="img">
+          <title>Plant cell with labelled organelles</title>
+          <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+          <!-- Cell wall -->
+          <rect x="60" y="20" width="340" height="340" rx="14" fill="#C0DD97" stroke="#3B6D11" stroke-width="4"/>
+          <!-- Cell membrane -->
+          <rect x="72" y="32" width="316" height="316" rx="10" fill="#EAF3DE" stroke="#639922" stroke-width="1.5"/>
+          <!-- Cytoplasm -->
+          <rect x="82" y="42" width="296" height="296" rx="8" fill="#F4FAF0"/>
+          <!-- Vacuole -->
+          <ellipse cx="238" cy="195" rx="100" ry="88" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+          <text x="238" y="190" text-anchor="middle" class="svg-label" fill="#0C447C">vacuole</text>
+          <text x="238" y="206" text-anchor="middle" class="svg-small" fill="#185FA5">cell sap · turgor pressure</text>
+          <!-- Nucleus -->
+          <ellipse cx="275" cy="95" rx="46" ry="36" fill="#CECBF6" stroke="#534AB7" stroke-width="2"/>
+          <text x="275" y="91" text-anchor="middle" class="svg-small" fill="#3C3489">nucleus</text>
+          <text x="275" y="105" text-anchor="middle" class="svg-small" fill="#534AB7">DNA + chromosomes</text>
+          <!-- Chloroplasts -->
+          <ellipse cx="115" cy="110" rx="25" ry="13" fill="#97C459" stroke="#3B6D11" stroke-width="1.5"/>
+          <ellipse cx="115" cy="145" rx="25" ry="13" fill="#97C459" stroke="#3B6D11" stroke-width="1.5"/>
+          <ellipse cx="115" cy="180" rx="25" ry="13" fill="#97C459" stroke="#3B6D11" stroke-width="1.5"/>
+          <!-- Mitochondria -->
+          <ellipse cx="340" cy="275" rx="27" ry="13" fill="#FAC775" stroke="#854F0B" stroke-width="1.5"/>
+          <path d="M318 275 Q325 269 331 275 Q337 281 343 275 Q349 269 355 275" fill="none" stroke="#854F0B" stroke-width="0.8"/>
+          <!-- Ribosomes -->
+          <circle cx="105" cy="250" r="4" fill="#7F77DD"/>
+          <circle cx="117" cy="255" r="4" fill="#7F77DD"/>
+          <circle cx="93" cy="256" r="4" fill="#7F77DD"/>
+          <!-- RIGHT SIDE LABELS -->
+          <line x1="400" y1="24" x2="440" y2="28" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="32" class="svg-small" fill="#27500A">cell wall (cellulose) — support &amp; shape</text>
+          <line x1="388" y1="46" x2="440" y2="56" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="60" class="svg-small" fill="#3B6D11">cell membrane — controls entry/exit</text>
+          <line x1="321" y1="90" x2="440" y2="90" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="94" class="svg-small" fill="#3C3489">nucleus — controls cell, stores DNA</text>
+          <line x1="140" y1="110" x2="440" y2="125" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="129" class="svg-small" fill="#27500A">chloroplasts — photosynthesis</text>
+          <line x1="340" y1="262" x2="440" y2="165" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="169" class="svg-small" fill="#633806">mitochondria — respiration (ATP)</text>
+          <line x1="338" y1="195" x2="440" y2="205" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="209" class="svg-small" fill="#0C447C">vacuole — keeps plant rigid (turgor)</text>
+          <line x1="121" y1="254" x2="440" y2="248" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 2"/>
+          <text x="444" y="252" class="svg-small" fill="#534AB7">ribosomes — protein synthesis</text>
+        </svg>
+      </div>
+
+      <!-- Bacterial features table -->
+      <div class="info-table-wrap">
+        <div class="info-table-title">Bacterial cell structures — what to know for the exam</div>
+        <table class="info-table">
+          <thead><tr><th>Structure</th><th>Present in bacteria?</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td>Cell wall</td><td class="yes">✓ (peptidoglycan)</td><td>Shape and protection</td></tr>
+            <tr><td>Cell membrane</td><td class="yes">✓</td><td>Controls what enters/leaves</td></tr>
+            <tr><td>Cytoplasm</td><td class="yes">✓</td><td>Site of metabolic reactions</td></tr>
+            <tr><td>Ribosomes (70S)</td><td class="yes">✓ (smaller than eukaryotic)</td><td>Protein synthesis</td></tr>
+            <tr><td>Circular DNA</td><td class="yes">✓ (free in cytoplasm)</td><td>Genetic information</td></tr>
+            <tr><td>Plasmids</td><td class="maybe">sometimes</td><td>Extra loops of DNA</td></tr>
+            <tr><td>Flagella</td><td class="maybe">sometimes</td><td>Movement</td></tr>
+            <tr><td>Nucleus</td><td class="no">✗</td><td>—</td></tr>
+            <tr><td>Mitochondria</td><td class="no">✗</td><td>—</td></tr>
+            <tr><td>Chloroplasts</td><td class="no">✗</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECTION 2: MICROSCOPES ═══════════ -->
+    <section id="microscopes" class="topic-section">
+      <div class="section-label">Topic 2</div>
+      <h2>Microscopes &amp; Magnification</h2>
+      <p class="section-intro">You need to be able to use the magnification formula, work in standard form, and compare the two types of microscope.</p>
+
+      <div class="two-col">
+        <div class="compare-card c-teal-card">
+          <div class="compare-title">Light microscope</div>
+          <ul class="compare-list">
+            <li><span class="badge teal">magnification</span> up to ×2,000</li>
+            <li><span class="badge teal">resolution</span> ~200 nm</li>
+            <li><span class="badge teal">specimens</span> living or dead</li>
+            <li><span class="badge teal">cost</span> cheap</li>
+            <li><span class="badge teal">image</span> colour</li>
+            <li><span class="badge teal">see</span> cells, nucleus, chloroplasts</li>
+          </ul>
+        </div>
+        <div class="compare-card c-purple-card">
+          <div class="compare-title">Electron microscope</div>
+          <ul class="compare-list">
+            <li><span class="badge purple">magnification</span> up to ×2,000,000</li>
+            <li><span class="badge purple">resolution</span> ~0.1 nm</li>
+            <li><span class="badge purple">specimens</span> dead only</li>
+            <li><span class="badge purple">cost</span> very expensive</li>
+            <li><span class="badge purple">image</span> black &amp; white (false colour added)</li>
+            <li><span class="badge purple">see</span> ribosomes, membranes, viruses</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Resolution</strong> = ability to distinguish two separate points. Higher resolution = finer detail. Electron microscopes can resolve ribosomes (~20 nm); light microscopes cannot (limited to ~200 nm).
+      </div>
+
+      <!-- INTERACTIVE: Magnification Calculator -->
+      <div class="interactive-card">
+        <div class="interactive-title">🔬 Magnification Calculator</div>
+        <div class="formula-display">magnification = image size ÷ real size</div>
+        <div class="slider-row">
+          <label>Image size</label>
+          <input type="range" min="1" max="100" value="30" id="img-s" oninput="calcMag()">
+          <span class="slider-val" id="img-lbl">30 mm</span>
+        </div>
+        <div class="slider-row">
+          <label>Real size</label>
+          <input type="range" min="1" max="100" value="30" id="real-s" oninput="calcMag()">
+          <span class="slider-val" id="real-lbl">0.030 mm</span>
+        </div>
+        <div class="calc-result">
+          <span class="calc-label">Magnification =</span>
+          <span class="calc-answer" id="mag-out">×1000</span>
+        </div>
+        <div class="std-form-display" id="std-form">Standard form: 1.00 × 10³</div>
+      </div>
+
+      <!-- Scale bar -->
+      <div class="diagram-card">
+        <div class="diagram-title">Scale of cells — orders of magnitude</div>
+        <div class="scale-bars">
+          <div class="scale-row"><div class="scale-label">Atom</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:1%;background:#7F77DD"></div></div><div class="scale-unit">0.1 nm</div></div>
+          <div class="scale-row"><div class="scale-label">Ribosome</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:3%;background:#534AB7"></div></div><div class="scale-unit">~20 nm</div></div>
+          <div class="scale-row"><div class="scale-label">Virus</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:6%;background:#3C3489"></div></div><div class="scale-unit">~100 nm</div></div>
+          <div class="scale-row"><div class="scale-label">Bacterium</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:14%;background:#D85A30"></div></div><div class="scale-unit">1–5 µm</div></div>
+          <div class="scale-row"><div class="scale-label">Animal cell</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:40%;background:#BA7517"></div></div><div class="scale-unit">10–30 µm</div></div>
+          <div class="scale-row"><div class="scale-label">Plant cell</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:65%;background:#639922"></div></div><div class="scale-unit">10–100 µm</div></div>
+          <div class="scale-row"><div class="scale-label">Human egg</div><div class="scale-bar-wrap"><div class="scale-bar" style="width:100%;background:#378ADD"></div></div><div class="scale-unit">~100 µm</div></div>
+        </div>
+        <p class="diagram-note">1 m = 1,000 mm = 1,000,000 µm = 1,000,000,000 nm &nbsp;·&nbsp; Each ×10 = 1 order of magnitude</p>
+      </div>
+
+      <div class="callout">
+        <strong>Required Practical 1:</strong> Use a light microscope to observe, draw and label plant and animal cells. Steps: prepare slide → stain (iodine for plant, methylene blue for animal) → coverslip → focus on lowest power first → increase magnification. Drawings: pencil, clear outlines, no shading, label with ruled lines, state magnification.
+      </div>
+    </section>
+
+    <!-- ═══════════ SECTION 3: CELL DIVISION ═══════════ -->
+    <section id="division" class="topic-section">
+      <div class="section-label">Topic 3</div>
+      <h2>Cell Division &amp; Specialisation</h2>
+      <p class="section-intro">Cells divide by mitosis to produce identical daughter cells. Specialised cells are adapted for specific functions.</p>
+
+      <div class="key-facts-grid">
+        <div class="key-fact c-purple">
+          <div class="kf-title">Chromosomes</div>
+          <div class="kf-body">Humans have <strong>46 chromosomes</strong> (23 pairs) in body cells. Each chromosome is a long DNA molecule carrying hundreds of genes.</div>
+        </div>
+        <div class="key-fact c-teal">
+          <div class="kf-title">Genes</div>
+          <div class="kf-body">A gene is a <strong>section of DNA</strong> that codes for a specific protein. Different base sequences → different proteins.</div>
+        </div>
+        <div class="key-fact c-green">
+          <div class="kf-title">Mitosis result</div>
+          <div class="kf-body">Produces <strong>two genetically identical</strong> diploid daughter cells. Used for growth, repair, and asexual reproduction.</div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE: Cell Cycle Stepper -->
+      <div class="interactive-card">
+        <div class="interactive-title">⟳ The Cell Cycle — click through each stage</div>
+        <div class="stepper-dots" id="stepper-dots"></div>
+        <div class="stepper-body" id="stepper-body"></div>
+        <div class="stepper-nav">
+          <button class="btn-nav" onclick="stepperGo(-1)">← back</button>
+          <span class="stepper-count" id="stepper-count"></span>
+          <button class="btn-nav" onclick="stepperGo(1)">next →</button>
+        </div>
+      </div>
+
+      <!-- Specialised cells -->
+      <div class="info-table-wrap">
+        <div class="info-table-title">Specialised cells — structure adapted to function</div>
+        <table class="info-table">
+          <thead><tr><th>Cell</th><th>Type</th><th>Special features</th><th>Function</th></tr></thead>
+          <tbody>
+            <tr><td>Red blood cell</td><td>Animal</td><td>No nucleus, biconcave disc shape</td><td>Carries oxygen (more haemoglobin)</td></tr>
+            <tr><td>Sperm cell</td><td>Animal</td><td>Flagellum, many mitochondria, acrosome</td><td>Fertilise egg cell</td></tr>
+            <tr><td>Nerve cell</td><td>Animal</td><td>Long axon, myelin sheath</td><td>Transmit electrical signals</td></tr>
+            <tr><td>Muscle cell</td><td>Animal</td><td>Contractile proteins, many mitochondria</td><td>Contract to produce movement</td></tr>
+            <tr><td>Root hair cell</td><td>Plant</td><td>Long thin extension, large surface area</td><td>Absorb water and minerals from soil</td></tr>
+            <tr><td>Palisade cell</td><td>Plant</td><td>Many chloroplasts, near leaf surface</td><td>Photosynthesis</td></tr>
+            <tr><td>Xylem vessel</td><td>Plant</td><td>Hollow, no end walls, lignified walls</td><td>Transport water up plant</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="two-col">
+        <div class="callout" style="margin:0">
+          <strong>Differentiation</strong> — process by which a cell becomes specialised for its function.<br><br>
+          <strong>In animals:</strong> mostly during early development. Mature cells largely lose the ability to differentiate.<br><br>
+          <strong>In plants:</strong> cells can differentiate throughout life. Meristem cells remain undifferentiated permanently.
+        </div>
+        <div class="callout" style="margin:0;border-color:#534AB7">
+          <strong>Exam tip — where does mitosis occur?</strong><br><br>
+          In animals: bone marrow, skin, gut lining, embryo.<br><br>
+          In plants: meristems at root tips and shoot tips.<br><br>
+          Mitosis does NOT occur in mature neurons or red blood cells.
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECTION 4: STEM CELLS & CANCER ═══════════ -->
+    <section id="stem" class="topic-section">
+      <div class="section-label">Topic 4</div>
+      <h2>Stem Cells &amp; Cancer</h2>
+      <p class="section-intro">Stem cells are undifferentiated cells with the ability to become specialised. Cancer results from uncontrolled cell division.</p>
+
+      <div class="two-col">
+        <div class="compare-card">
+          <div class="compare-title" style="color:#185FA5">Animal stem cells</div>
+          <ul class="compare-list">
+            <li><strong>Embryonic:</strong> pluripotent — can become almost any cell type</li>
+            <li><strong>Adult (e.g. bone marrow):</strong> multipotent — limited range, mainly blood cells</li>
+            <li>Used in therapeutic cloning — patient's DNA used to grow replacement tissues</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-title" style="color:#3B6D11">Plant stem cells (meristems)</div>
+          <ul class="compare-list">
+            <li>Found at <strong>root tips and shoot tips</strong></li>
+            <li>Totipotent — can become any plant cell type</li>
+            <li>Used to clone plants via tissue culture on nutrient agar</li>
+            <li>Meristems remain undifferentiated throughout the plant's life</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pros-cons-grid">
+        <div class="pros-card">
+          <div class="pc-title">Benefits of stem cell research</div>
+          <ul>
+            <li>Potential to treat currently incurable diseases (paralysis, diabetes)</li>
+            <li>Therapeutic cloning reduces organ rejection risk</li>
+            <li>Could grow new β-cells to treat type 1 diabetes</li>
+            <li>Could repair spinal cord damage (paralysis)</li>
+          </ul>
+        </div>
+        <div class="cons-card">
+          <div class="pc-title">Risks &amp; ethical issues</div>
+          <ul>
+            <li>Embryo destruction raises ethical and religious concerns</li>
+            <li>Stem cells could develop into tumours</li>
+            <li>Risk of infection from transplanted cells</li>
+            <li>Treatments not always reliable or consistent</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cancer -->
+      <div class="diagram-card">
+        <div class="diagram-title">Cancer — benign vs malignant</div>
+        <div class="two-col" style="gap:16px;padding:0">
+          <div style="padding:16px;border:1.5px solid #639922;border-radius:10px;background:#EAF3DE">
+            <div style="font-weight:600;color:#27500A;margin-bottom:8px;font-size:15px">Benign tumour ✓ (less dangerous)</div>
+            <ul style="color:#3B6D11;font-size:14px;line-height:1.8;padding-left:18px">
+              <li>Grows slowly</li>
+              <li>Stays in one place</li>
+              <li>Does not invade other tissues</li>
+              <li>Usually not life-threatening</li>
+              <li>Can be removed by surgery</li>
+            </ul>
+          </div>
+          <div style="padding:16px;border:1.5px solid #993C1D;border-radius:10px;background:#FAECE7">
+            <div style="font-weight:600;color:#712B13;margin-bottom:8px;font-size:15px">Malignant tumour ✗ (dangerous)</div>
+            <ul style="color:#993C1D;font-size:14px;line-height:1.8;padding-left:18px">
+              <li>Grows faster</li>
+              <li>Spreads (metastasis) via blood/lymph</li>
+              <li>Invades other tissues</li>
+              <li>Life-threatening</li>
+              <li>Called cancer when malignant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-table-wrap">
+        <div class="info-table-title">Cancer risk factors</div>
+        <table class="info-table">
+          <thead><tr><th>Type</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge purple">Genetic</span></td><td>Inherited mutations e.g. BRCA1/2 genes increase breast cancer risk</td></tr>
+            <tr><td><span class="badge amber">Lifestyle</span></td><td>Smoking (lung cancer), UV/sun exposure (skin cancer), obesity, alcohol, ionising radiation</td></tr>
+            <tr><td><span class="badge teal">Viral</span></td><td>HPV → cervical cancer; Hepatitis B/C → liver cancer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECTION 5: TRANSPORT ═══════════ -->
+    <section id="transport" class="topic-section">
+      <div class="section-label">Topic 5</div>
+      <h2>Transport — Diffusion, Osmosis &amp; Active Transport</h2>
+      <p class="section-intro">Three ways substances move in and out of cells. Know them inside out — examiners love asking you to compare them.</p>
+
+      <!-- DIAGRAM 3: Three transports -->
+      <div class="diagram-card">
+        <div class="diagram-title">The three transport processes compared</div>
+        <svg width="100%" viewBox="0 0 680 420" role="img">
+          <title>Diffusion, osmosis and active transport comparison</title>
+          <defs><marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+          <!-- DIFFUSION -->
+          <text x="104" y="22" text-anchor="middle" class="svg-title" fill="#27500A">Diffusion</text>
+          <rect x="24" y="35" width="66" height="180" rx="4" fill="#C0DD97" stroke="#639922" stroke-width="0.5"/>
+          <text x="57" y="54" text-anchor="middle" class="svg-small" fill="#27500A">HIGH</text>
+          <circle cx="38" cy="76" r="6" fill="#3B6D11"/><circle cx="60" cy="68" r="6" fill="#3B6D11"/>
+          <circle cx="44" cy="98" r="6" fill="#3B6D11"/><circle cx="68" cy="90" r="6" fill="#3B6D11"/>
+          <circle cx="38" cy="120" r="6" fill="#3B6D11"/><circle cx="65" cy="130" r="6" fill="#3B6D11"/>
+          <circle cx="50" cy="150" r="6" fill="#3B6D11"/><circle cx="72" cy="158" r="6" fill="#3B6D11"/>
+          <!-- Membrane -->
+          <rect x="90" y="35" width="8" height="180" rx="2" fill="#B4B2A9"/>
+          <!-- Low side -->
+          <rect x="98" y="35" width="66" height="180" rx="4" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+          <text x="131" y="54" text-anchor="middle" class="svg-small" fill="#3B6D11">LOW</text>
+          <circle cx="114" cy="90" r="6" fill="#3B6D11" opacity="0.4"/>
+          <circle cx="148" cy="145" r="6" fill="#3B6D11" opacity="0.4"/>
+          <circle cx="128" cy="168" r="6" fill="#3B6D11" opacity="0.4"/>
+          <!-- Arrow -->
+          <line x1="78" y1="125" x2="108" y2="125" stroke="#3B6D11" stroke-width="2" marker-end="url(#arr3)"/>
+          <!-- Info -->
+          <text x="104" y="235" text-anchor="middle" class="svg-small" fill="#27500A">High → low conc.</text>
+          <text x="104" y="251" text-anchor="middle" class="svg-small" fill="#5F5E5A">No energy · any molecule</text>
+          <text x="104" y="267" text-anchor="middle" class="svg-small" fill="#5F5E5A">e.g. O₂/CO₂ in lungs</text>
+
+          <!-- OSMOSIS -->
+          <text x="340" y="22" text-anchor="middle" class="svg-title" fill="#185FA5">Osmosis</text>
+          <rect x="260" y="35" width="66" height="180" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="293" y="54" text-anchor="middle" class="svg-small" fill="#0C447C">DILUTE</text>
+          <circle cx="273" cy="76" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="292" cy="68" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="279" cy="98" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="300" cy="90" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="271" cy="122" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="296" cy="132" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="282" cy="155" r="5" fill="#378ADD" opacity="0.8"/>
+          <circle cx="305" cy="165" r="5" fill="#378ADD" opacity="0.8"/>
+          <!-- Membrane -->
+          <rect x="326" y="35" width="8" height="180" rx="2" fill="#85B7EB" stroke="#185FA5" stroke-width="0.5"/>
+          <!-- Concentrated side -->
+          <rect x="334" y="35" width="66" height="180" rx="4" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="367" y="54" text-anchor="middle" class="svg-small" fill="#0C447C">CONC.</text>
+          <circle cx="349" cy="82" r="5" fill="#378ADD" opacity="0.45"/>
+          <circle cx="375" cy="138" r="5" fill="#378ADD" opacity="0.45"/>
+          <circle cx="353" cy="165" r="5" fill="#378ADD" opacity="0.45"/>
+          <!-- Solute blobs -->
+          <circle cx="362" cy="97" r="8" fill="#0C447C" opacity="0.3"/>
+          <circle cx="348" cy="145" r="8" fill="#0C447C" opacity="0.3"/>
+          <circle cx="378" cy="162" r="8" fill="#0C447C" opacity="0.3"/>
+          <!-- Arrow -->
+          <line x1="314" y1="125" x2="344" y2="125" stroke="#185FA5" stroke-width="2" marker-end="url(#arr3)"/>
+          <!-- Info -->
+          <text x="340" y="235" text-anchor="middle" class="svg-small" fill="#185FA5">Water only · high→low water potential</text>
+          <text x="340" y="251" text-anchor="middle" class="svg-small" fill="#5F5E5A">No energy · partially permeable membrane</text>
+          <text x="340" y="267" text-anchor="middle" class="svg-small" fill="#5F5E5A">e.g. water into root cells</text>
+
+          <!-- ACTIVE TRANSPORT -->
+          <text x="572" y="22" text-anchor="middle" class="svg-title" fill="#993C1D">Active transport</text>
+          <rect x="492" y="35" width="66" height="180" rx="4" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+          <text x="525" y="54" text-anchor="middle" class="svg-small" fill="#993C1D">LOW</text>
+          <circle cx="508" cy="100" r="6" fill="#D85A30" opacity="0.45"/>
+          <circle cx="535" cy="155" r="6" fill="#D85A30" opacity="0.45"/>
+          <circle cx="515" cy="175" r="6" fill="#D85A30" opacity="0.45"/>
+          <!-- Membrane with carrier protein -->
+          <rect x="558" y="35" width="8" height="180" rx="2" fill="#F0997B" stroke="#993C1D" stroke-width="1.5"/>
+          <rect x="553" y="110" width="18" height="38" rx="7" fill="#F5C4B3" stroke="#993C1D" stroke-width="1.5"/>
+          <!-- High side -->
+          <rect x="566" y="35" width="66" height="180" rx="4" fill="#F5C4B3" stroke="#D85A30" stroke-width="0.5"/>
+          <text x="599" y="54" text-anchor="middle" class="svg-small" fill="#712B13">HIGH</text>
+          <circle cx="578" cy="76" r="6" fill="#D85A30"/>
+          <circle cx="600" cy="68" r="6" fill="#D85A30"/>
+          <circle cx="580" cy="100" r="6" fill="#D85A30"/>
+          <circle cx="606" cy="90" r="6" fill="#D85A30"/>
+          <circle cx="576" cy="128" r="6" fill="#D85A30"/>
+          <circle cx="603" cy="138" r="6" fill="#D85A30"/>
+          <circle cx="584" cy="162" r="6" fill="#D85A30"/>
+          <!-- Arrow against gradient -->
+          <line x1="542" y1="125" x2="572" y2="125" stroke="#993C1D" stroke-width="2.5" marker-end="url(#arr3)"/>
+          <text x="562" y="118" text-anchor="middle" class="svg-small" fill="#712B13">ATP ⚡</text>
+          <!-- Info -->
+          <text x="572" y="235" text-anchor="middle" class="svg-small" fill="#993C1D">Low → HIGH conc. (against gradient!)</text>
+          <text x="572" y="251" text-anchor="middle" class="svg-small" fill="#5F5E5A">Needs ATP · carrier proteins</text>
+          <text x="572" y="267" text-anchor="middle" class="svg-small" fill="#5F5E5A">e.g. glucose in gut, minerals in roots</text>
+
+          <!-- Dividers -->
+          <line x1="228" y1="10" x2="228" y2="290" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="5 4"/>
+          <line x1="454" y1="10" x2="454" y2="290" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="5 4"/>
+
+          <!-- Bottom bar -->
+          <rect x="20" y="295" width="640" height="30" rx="6" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+          <text x="340" y="314" text-anchor="middle" class="svg-small" fill="#5F5E5A">Diffusion &amp; osmosis: passive (no energy) · Active transport: requires ATP · Only active transport works against a gradient</text>
+
+          <!-- Osmosis key -->
+          <text x="340" y="360" text-anchor="middle" class="svg-small" fill="#185FA5">Osmosis: % mass change = (final mass − initial mass) ÷ initial mass × 100</text>
+          <text x="340" y="378" text-anchor="middle" class="svg-small" fill="#5F5E5A">Turgor pressure: water in → pushes cell wall → plant stays rigid | Plasmolysis: water out → vacuole shrinks → plant wilts</text>
+          <text x="340" y="396" text-anchor="middle" class="svg-small" fill="#5F5E5A">Required Practical 3: potato cylinders in salt/sugar solutions — weigh before and after, calculate % mass change</text>
+        </svg>
+      </div>
+
+      <!-- SA:V Interactive -->
+      <div class="interactive-card">
+        <div class="interactive-title">📐 Surface Area : Volume Ratio Calculator</div>
+        <p style="font-size:14px;color:var(--text-sec);margin-bottom:14px">As organisms grow, SA:V ratio decreases — they need specialised exchange surfaces. Drag the slider to see why.</p>
+        <div class="slider-row">
+          <label>Side length</label>
+          <input type="range" min="1" max="20" value="4" id="side" oninput="calcSAV()">
+          <span class="slider-val" id="side-lbl">4 cm</span>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card"><div class="stat-label">Surface area</div><div class="stat-val" id="sa-out">96 cm²</div></div>
+          <div class="stat-card"><div class="stat-label">Volume</div><div class="stat-val" id="v-out">64 cm³</div></div>
+          <div class="stat-card" style="border-color:#534AB7"><div class="stat-label">SA : V ratio</div><div class="stat-val" style="color:#534AB7" id="ratio-out">1.5 : 1</div></div>
+        </div>
+        <div class="cube-examples">
+          <div class="cube-eg" style="border-color:#0F6E56">
+            <div class="cube-vis" style="width:20px;height:20px;background:#9FE1CB;border:2px solid #1D9E75;border-radius:3px;margin:0 auto 6px"></div>
+            <div style="font-size:13px;font-weight:600;color:#0F6E56">Side = 1 cm</div>
+            <div style="font-size:12px;color:#5F5E5A">SA = 6 cm²</div>
+            <div style="font-size:12px;color:#5F5E5A">V = 1 cm³</div>
+            <div style="font-size:16px;font-weight:700;color:#0F6E56">6 : 1</div>
+          </div>
+          <div class="cube-eg" style="border-color:#854F0B">
+            <div class="cube-vis" style="width:36px;height:36px;background:#FAC775;border:2px solid #BA7517;border-radius:3px;margin:0 auto 6px"></div>
+            <div style="font-size:13px;font-weight:600;color:#854F0B">Side = 3 cm</div>
+            <div style="font-size:12px;color:#5F5E5A">SA = 54 cm²</div>
+            <div style="font-size:12px;color:#5F5E5A">V = 27 cm³</div>
+            <div style="font-size:16px;font-weight:700;color:#854F0B">2 : 1</div>
+          </div>
+          <div class="cube-eg" style="border-color:#993C1D">
+            <div class="cube-vis" style="width:54px;height:54px;background:#F5C4B3;border:2px solid #D85A30;border-radius:3px;margin:0 auto 6px"></div>
+            <div style="font-size:13px;font-weight:600;color:#993C1D">Side = 6 cm</div>
+            <div style="font-size:12px;color:#5F5E5A">SA = 216 cm²</div>
+            <div style="font-size:12px;color:#5F5E5A">V = 216 cm³</div>
+            <div style="font-size:16px;font-weight:700;color:#993C1D">1 : 1</div>
+          </div>
+        </div>
+
+        <div class="diagram-card" style="margin-top:16px">
+          <div class="diagram-title" style="margin-bottom:10px">Exchange surface adaptations</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div class="adapt-row"><span class="badge teal">lungs</span><span>Alveoli — folded, one-cell-thick walls, capillary network, moist lining</span></div>
+            <div class="adapt-row"><span class="badge purple">gut</span><span>Villi + microvilli — massive SA increase, capillaries and lacteals inside each villus</span></div>
+            <div class="adapt-row"><span class="badge amber">roots</span><span>Root hair cells — long thin extension massively increases SA for water/mineral uptake</span></div>
+            <div class="adapt-row"><span class="badge teal" style="background:#E6F1FB;color:#0C447C">gills</span><span>Gill lamellae — thin, large SA, counter-current blood flow maintains concentration gradient</span></div>
+            <div class="adapt-row"><span class="badge" style="background:#EAF3DE;color:#27500A">leaves</span><span>Stomata + air spaces — allow CO₂/O₂ exchange, spongy mesophyll increases SA</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>GCSE Biology — Cells &amp; Transport revision site &nbsp;·&nbsp; Good luck! 🧬</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
